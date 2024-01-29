@@ -1,0 +1,127 @@
+{
+    "chain": [
+        {
+            "phase": "MarketResearch",
+            "phaseType": "SimplePhase",
+            "max_turn_step": -1,
+            "need_reflect": "True"
+        },
+        {
+            "phase": "BusinessPlanDevelopment",
+            "phaseType": "SimplePhase",
+            "max_turn_step": -1,
+            "need_reflect": "True"
+        },
+        {
+            "phase": "FundingAcquisition",
+            "phaseType": "SimplePhase",
+            "max_turn_step": -1,
+            "need_reflect": "True"
+        },
+        {
+            "phase": "TeamBuilding",
+            "phaseType": "SimplePhase",
+            "max_turn_step": -1,
+            "need_reflect": "True"
+        },
+        {
+            "phase": "ProductDevelopment",
+            "phaseType": "ComposedPhase",
+            "cycleNum": 5,
+            "Composition": [
+                {
+                    "phase": "PrototypeDesign",
+                    "phaseType": "SimplePhase",
+                    "max_turn_step": 1,
+                    "need_reflect": "False"
+                },
+                {
+                    "phase": "PrototypeTesting",
+                    "phaseType": "SimplePhase",
+                    "max_turn_step": 1,
+                    "need_reflect": "False"
+                },
+                {
+                    "phase": "FeedbackIntegration",
+                    "phaseType": "SimplePhase",
+                    "max_turn_step": 1,
+                    "need_reflect": "False"
+                }
+            ]
+        },
+        {
+            "phase": "MarketingStrategy",
+            "phaseType": "SimplePhase",
+            "max_turn_step": -1,
+            "need_reflect": "True"
+        },
+        {
+            "phase": "SalesAndDistribution",
+            "phaseType": "SimplePhase",
+            "max_turn_step": -1,
+            "need_reflect": "True"
+        },
+        {
+            "phase": "CustomerSupportAndFeedback",
+            "phaseType": "SimplePhase",
+            "max_turn_step": -1,
+            "need_reflect": "True"
+        },
+        {
+            "phase": "ContinuousImprovement",
+            "phaseType": "ComposedPhase",
+            "cycleNum": -1,
+            "Composition": [
+                {
+                    "phase": "ProductEnhancement",
+                    "phaseType": "SimplePhase",
+                    "max_turn_step": 1,
+                    "need_reflect": "False"
+                },
+                {
+                    "phase": "MarketAdaptation",
+                    "phaseType": "SimplePhase",
+                    "max_turn_step": 1,
+                    "need_reflect": "False"
+                }
+            ]
+        },
+        {
+            "phase": "BusinessExpansion",
+            "phaseType": "SimplePhase",
+            "max_turn_step": -1,
+            "need_reflect": "True"
+        }
+    ],
+    "recruitments": [
+        "Chief Executive Officer",
+        "Counselor",
+        "Chief Human Resource Officer",
+        "Chief Product Officer",
+        "Chief Technology Officer",
+        "Programmer",
+        "Programmer2",
+        "Code Reviewer",
+        "Software Test Engineer",
+        "Chief Creative Officer",
+        "Brainstormer",
+        "Chief Financial Officer",
+        "Marketing Manager",
+        "Sales Director",
+        "Customer Support Specialist",
+        "Data Analyst",
+        "Network Administrator",
+        "Graphic Designer",
+        "Public Relations Manager",
+        "Human Resources Specialist",
+        "Project Manager"
+    ],
+    "clear_structure": "True",
+    "gui_design": "True",
+    "git_management": "False",
+    "web_spider": "True",
+    "self_improve": "True",
+    "incremental_develop": "True",
+    "with_memory": "True",
+    "background_prompt": "ChatDev is a software company powered by multiple intelligent agents, such as chief executive officer, chief human resources officer, chief product officer, chief technology officer, etc, with a multi-agent organizational structure and the mission of 'changing the digital world through programming'."
+}
